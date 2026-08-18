@@ -1,5 +1,9 @@
 # AI Security
 
+**#IMPORTANT LINKS**
+https://docs.google.com/document/d/1VaQ6lid_3EZDLLs3-byoLjSSNBvSLnRz5flKGSNay3U/edit?usp=sharing
+
+
 Welcome to the AI Security repository.
 
 This repository is dedicated to studying, implementing, and experimenting with security concepts in modern Artificial Intelligence systems. It serves as a collaborative workspace for research, development, and practical implementations related to AI security.
