@@ -1,0 +1,147 @@
+---------- TextMessage (user) ----------
+Error processing publish message for concept_clarification_agent_43635838-2e14-4969-be4e-bc9bfcc379f7/43635838-2e14-4969-be4e-bc9bfcc379f7
+Traceback (most recent call last):
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\btp 5\SentinelMesh_CP2_MLA_MLB_package\TAMAS\autogen_run.py", line 158, in main
+    await Console(team.run_stream(task="Task: " + data["user query"]))
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_agentchat\ui\_console.py", line 190, in Console
+    await aprint(message.to_text(), end="\n", flush=True)
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2011' in position 265: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_core\_single_threaded_agent_runtime.py", line 606, in _on_message
+    return await agent.on_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_core\_base_agent.py", line 119, in on_message
+    return await self.on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_agentchat\teams\_group_chat\_sequential_routed_agent.py", line 67, in on_message_impl
+    return await super().on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_core\_routed_agent.py", line 485, in on_message_impl
+    return await h(self, message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_core\_routed_agent.py", line 268, in wrapper
+    return_value = await func(self, message, ctx)  # type: ignore
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_agentchat\teams\_group_chat\_chat_agent_container.py", line 133, in handle_request
+    async for msg in self._agent.on_messages_stream(self._message_buffer, ctx.cancellation_token):
+    ...<4 lines>...
+            await self._log_message(msg)
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_agentchat\agents\_assistant_agent.py", line 953, in on_messages_stream
+    async for inference_output in self._call_llm(
+    ...<15 lines>...
+            yield inference_output
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_agentchat\agents\_assistant_agent.py", line 1109, in _call_llm
+    model_result = await model_client.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_ext\models\openai\_openai_client.py", line 704, in create
+    result: Union[ParsedChatCompletion[BaseModel], ChatCompletion] = await future
+                                                                     ^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2952, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<55 lines>...
+    )
+    ^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\openai\_base_client.py", line 2087, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\openai\_base_client.py", line 1766, in request
+    self._platform = await asyncify(get_platform)()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\openai\_utils\_sync.py", line 56, in wrapper
+    return await to_thread(function, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\openai\_utils\_sync.py", line 20, in to_thread
+    return await asyncio.to_thread(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-14' coro=<SingleThreadedAgentRuntime._process_publish() done, defined at C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_core\_single_threaded_agent_runtime.py:557> exception=ValueError('task_done() called too many times')>
+Traceback (most recent call last):
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\btp 5\SentinelMesh_CP2_MLA_MLB_package\TAMAS\autogen_run.py", line 158, in main
+    await Console(team.run_stream(task="Task: " + data["user query"]))
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_agentchat\ui\_console.py", line 190, in Console
+    await aprint(message.to_text(), end="\n", flush=True)
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2011' in position 265: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_core\_single_threaded_agent_runtime.py", line 629, in _process_publish
+    self._message_queue.task_done()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\queues.py", line 237, in task_done
+    raise ValueError('task_done() called too many times')
+ValueError: task_done() called too many times
+Traceback (most recent call last):
+  File "D:\btp 5\SentinelMesh_CP2_MLA_MLB_package\TAMAS\autogen_run.py", line 162, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\btp 5\SentinelMesh_CP2_MLA_MLB_package\TAMAS\autogen_run.py", line 158, in main
+    await Console(team.run_stream(task="Task: " + data["user query"]))
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\site-packages\autogen_agentchat\ui\_console.py", line 190, in Console
+    await aprint(message.to_text(), end="\n", flush=True)
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Shaily\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2011' in position 265: character maps to <undefined>

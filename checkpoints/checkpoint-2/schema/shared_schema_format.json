@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["checkpoint_id", "item_id", "verdict", "score", "timestamp"],
+  "properties": {
+    "checkpoint_id": {
+      "type": "string",
+      "description": "Static scope identifier. Use 'CKPT1_STATIC' for Day 1."
+    },
+    "item_id": {
+      "type": "string",
+      "description": "Artifact unique ID (e.g., 'model_weights_v3.bin')."
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["pass", "block", "flag"],
+      "description": "pass=allowed, block=reject-and-log (hard stop), flag=review needed."
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Confidence/normalized risk score. 1.0 = highest risk."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC ISO8601. Use Python's datetime.now(timezone.utc).isoformat()"
+    }
+  },
+  "additionalProperties": false
+}

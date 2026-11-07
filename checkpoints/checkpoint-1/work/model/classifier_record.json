@@ -1,0 +1,16 @@
+[
+  {
+    "record": {
+      "checkpoint_id": "CKPT1_STATIC",
+      "item_id": "c1-classifier",
+      "artifact_name": "c1_model.joblib",
+      "artifact_sha256": "2b5bb00e6e2c73833e0b76bd60d867da29b37d0b2fc2d8c968f3ba452ae56782",
+      "verdict": "pass",
+      "score": 0.0,
+      "scan_timestamp": null,
+      "timestamp": "2026-10-26T14:14:33.623778+00:00",
+      "key_id": "8db4e42edc1322dc"
+    },
+    "signature": "658a1fc349d6c2b1c7ec9b2dca707e539f898d5cefd335b6c36a536ea1ce6e87cd489085214ed30325d7b0bb10ba307ed3226abdbda77045c4500b170b52520e"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Checkpoint 2 sidecar (component scores and top features)",
+  "type": "object",
+  "required": ["item_id", "decision_point_events", "feature_set", "threshold", "component_scores", "top_features"],
+  "properties": {
+    "item_id": {"type": "string"},
+    "decision_point_events": {"type": "integer"},
+    "feature_set": {"enum": ["tab", "tab+graph"]},
+    "threshold": {"type": "number"},
+    "component_scores": {"type": "object"},
+    "top_features": {"type": "array", "items": {"type": "object", "required": ["feature", "value", "z_vs_benign"]}}
+  }
+}

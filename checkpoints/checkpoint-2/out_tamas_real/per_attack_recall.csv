@@ -1,0 +1,16 @@
+protocol,K,model,attack_type,n_pos,recall
+task_grouped,1,Rule,DPI,3,0.0
+task_grouped,1,LR,DPI,3,0.0
+task_grouped,1,RF,DPI,3,0.0
+task_grouped,1,LR_cal,DPI,3,0.0
+task_grouped,1,RF_cal,DPI,3,0.0
+task_grouped,2,Rule,DPI,1,0.0
+task_grouped,2,LR,DPI,1,0.0
+task_grouped,2,RF,DPI,1,0.0
+task_grouped,2,LR_cal,DPI,1,0.0
+task_grouped,2,RF_cal,DPI,1,0.0
+task_grouped,4,Rule,DPI,1,0.0
+task_grouped,4,LR,DPI,1,0.0
+task_grouped,4,RF,DPI,1,0.0
+task_grouped,4,LR_cal,DPI,1,0.0
+task_grouped,4,RF_cal,DPI,1,0.0

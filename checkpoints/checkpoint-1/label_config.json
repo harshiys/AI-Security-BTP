@@ -1,0 +1,10 @@
+{
+  "mode": "label_dir_map",
+  "dir_pattern": "^label\\d+$",
+  "map": {
+    "label0": "benign",
+    "label1": "backdoor"
+  },
+  "mapping_status": "provisional",
+  "evidence": "Project convention: label0 = benign, label1 = backdoor. Provisional pending author confirmation."
+}

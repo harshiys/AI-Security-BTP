@@ -1,0 +1,16 @@
+rule,fold,limit,test_fpr,test_recall,n_fired
+g_pingpong > 0,0,0.0,0.0,,0
+g_n_novel_edges > 0,0,0.0,0.0,,0
+a_n_err > 0,0,0.0,0.0,,0
+g_pingpong > 0,1,0.0,0.0,0.0,0
+g_n_novel_edges > 0,1,0.0,0.0,0.0,0
+a_n_err > 0,1,0.0,0.0,0.0,0
+g_pingpong > 0,2,0.0,0.0,,0
+g_n_novel_edges > 0,2,0.0,0.0,,0
+a_n_err > 0,2,0.0,0.0,,0
+g_pingpong > 0,3,0.0,0.0,0.0,0
+g_n_novel_edges > 0,3,0.0,0.0,0.0,0
+a_n_err > 0,3,0.0,0.0,0.0,0
+g_pingpong > 0,4,0.0,0.0,0.0,0
+g_n_novel_edges > 0,4,0.0,0.0,0.0,0
+a_n_err > 0,4,0.0,0.0,0.0,0

@@ -1,0 +1,16 @@
+{
+  "signed_message": {
+    "message": {
+      "nonce": "nonce-001",
+      "operation": "delegate",
+      "payload": {
+        "task": "fact-check"
+      },
+      "receiver": "fact_checking_agent",
+      "sender": "news_gathering_agent"
+    },
+    "signature": "c2f984536a5e1f65af6fe2cc5f3ea6ff805b7c7e8dfe765e2365e49236e87283",
+    "algorithm": "HMAC-SHA256"
+  },
+  "verification": true
+}

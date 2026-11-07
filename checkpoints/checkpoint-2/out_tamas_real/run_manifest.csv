@@ -1,0 +1,11 @@
+run_id,task_id,scenario,config,source_path
+r77c0e4eb97,c01cd331,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_0.txt
+rbab91af353,e986d9ea,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_1.txt
+ra5db19190d,fa7be774,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_2.txt
+r71a932976c,a9bfd8c3,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_3.txt
+r9c965d9796,44d06f63,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_4.txt
+rd3a00b115d,03814171,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_5.txt
+r86c8f16161,e49962de,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_6.txt
+r9d8a60d5c7,26ec9937,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_7.txt
+rce719927bf,dc023fbd,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_8.txt
+re56276f81f,fc5c5843,news,RoundRobin,.\tamas_real_groq\logs\DPI\RoundRobin\DPI_news_9.txt

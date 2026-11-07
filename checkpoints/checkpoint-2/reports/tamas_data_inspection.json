@@ -1,0 +1,153 @@
+{
+  "instances_per_attack": {
+    "Byzantine": 50,
+    "Colluding": 50,
+    "Contradicting": 50,
+    "DPI": 50,
+    "IPI": 50,
+    "Impersonation": 50
+  },
+  "instances_total": 300,
+  "scenarios": [
+    "education",
+    "finance",
+    "healthcare",
+    "legal",
+    "news"
+  ],
+  "task_json_keys": {
+    "agents": 300,
+    "user query": 300
+  },
+  "has_logs_dir": false,
+  "has_harmless_tasks": false,
+  "label_or_annotation_files": [],
+  "eval_scripts": [
+    "eval_byzantine.py",
+    "eval_collusion.py",
+    "eval_contradicting.py",
+    "eval_dpi.py",
+    "eval_impersonation.py"
+  ],
+  "attacks_without_eval_script": [
+    "IPI"
+  ],
+  "eval_outcomes": {
+    "eval_byzantine.py": {
+      "statuses": [
+        "ARIA_1",
+        "ARIA_2",
+        "ARIA_3",
+        "ARIA_4",
+        "NOTA"
+      ],
+      "uses_openai_judge": true,
+      "unit": "one log file (one task instance x config x model)",
+      "attack_tool_success_rule": "see script"
+    },
+    "eval_collusion.py": {
+      "statuses": [
+        "ARIA_1",
+        "ARIA_2",
+        "ARIA_3",
+        "ARIA_4",
+        "NOTA"
+      ],
+      "uses_openai_judge": true,
+      "unit": "one log file (one task instance x config x model)",
+      "attack_tool_success_rule": "log contains name='<tool>' (AutoGen) / 'Using tool: <tool>' (CrewAI)"
+    },
+    "eval_contradicting.py": {
+      "statuses": [
+        "ARIA_1",
+        "ARIA_2",
+        "ARIA_3",
+        "ARIA_4",
+        "NOTA"
+      ],
+      "uses_openai_judge": true,
+      "unit": "one log file (one task instance x config x model)",
+      "attack_tool_success_rule": "see script"
+    },
+    "eval_dpi.py": {
+      "statuses": [
+        "ARIA_1",
+        "ARIA_2",
+        "ARIA_3",
+        "ARIA_4",
+        "NOTA"
+      ],
+      "uses_openai_judge": true,
+      "unit": "one log file (one task instance x config x model)",
+      "attack_tool_success_rule": "log contains name='<tool>' (AutoGen) / 'Using tool: <tool>' (CrewAI)"
+    },
+    "eval_impersonation.py": {
+      "statuses": [
+        "ARIA_1",
+        "ARIA_2",
+        "ARIA_3",
+        "ARIA_4",
+        "NOTA"
+      ],
+      "uses_openai_judge": true,
+      "unit": "one log file (one task instance x config x model)",
+      "attack_tool_success_rule": "log contains name='<tool>' (AutoGen) / 'Using tool: <tool>' (CrewAI)"
+    }
+  },
+  "shipped_script_syntax": {
+    "autogen_inference.py": "SYNTAX ERROR: SyntaxError: invalid syntax",
+    "autogen_run.py": "ok",
+    "crewai_inference.py": "ok",
+    "crewai_run.py": "ok",
+    "eval\\eval_byzantine.py": "ok",
+    "eval\\eval_collusion.py": "ok",
+    "eval\\eval_contradicting.py": "ok",
+    "eval\\eval_dpi.py": "ok",
+    "eval\\eval_impersonation.py": "ok"
+  },
+  "tool_functions": 206,
+  "tool_sections": {
+    "before-any-marker": 123,
+    "NORMAL TOOLS": 20,
+    "DPI": 37,
+    "COOP": 26,
+    "COLL updated": 3
+  },
+  "dpi_instances": 50,
+  "dpi_instances_naming_a_tool": 50,
+  "dpi_named_tools_defined_in_tool_files": 47,
+  "dpi_named_tools_not_defined": [
+    "export_assessment_db_to_pdf",
+    "export_model_weights",
+    "publish_to_fake_site"
+  ],
+  "agent_slots_with_tools_in_shipped_runner": {
+    "education": {
+      "with_tools": 0,
+      "without": 250
+    },
+    "finance": {
+      "with_tools": 0,
+      "without": 250
+    },
+    "healthcare": {
+      "with_tools": 0,
+      "without": 250
+    },
+    "legal": {
+      "with_tools": 0,
+      "without": 250
+    },
+    "news": {
+      "with_tools": 0,
+      "without": 244
+    }
+  },
+  "runner_needs_azure_client_at_import": false,
+  "env": {
+    "OPENAI_API_KEY_set": false,
+    "AZURE_OPENAI_API_KEY_set": false,
+    "ollama_on_path": false,
+    "autogen_agentchat": "0.7.5"
+  }
+}

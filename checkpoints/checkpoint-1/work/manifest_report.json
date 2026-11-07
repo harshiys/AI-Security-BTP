@@ -1,0 +1,38 @@
+{
+  "warnings": [],
+  "class_counts": {
+    "benign": 50,
+    "backdoor": 50
+  },
+  "contradictory_tokens": 0,
+  "per_group": {
+    "llama2_7b_toxic_backdoors_hard_rank64_qv": {
+      "benign": 50,
+      "backdoor": 50
+    }
+  },
+  "unlabeled_dropped": 0,
+  "data_tag": "padbench_hf",
+  "revision": "a56089099ac437b2d2d8b668673bf6a61e7e5f50",
+  "weight_name": "*.safetensors",
+  "label_mode": "path_regex",
+  "rules_file": "label_config.json",
+  "mapping_status": "provisional",
+  "folders": [
+    "llama2_7b_toxic_backdoors_hard_rank64_qv"
+  ],
+  "folders_resolved": {
+    "llama2_7b_toxic_backdoors_hard_rank64_qv": "llama2_7b_toxic_backdoors_hard_rank64_qv"
+  },
+  "root_prefix": "",
+  "seed": 0,
+  "local_root_effective": null,
+  "skipped_incomplete_files": 0,
+  "available_total": 100,
+  "dirs_with_multiple_weight_files": 0,
+  "selected": {
+    "benign": 30,
+    "backdoor": 30
+  },
+  "selected_bytes_gb": 8.054
+}

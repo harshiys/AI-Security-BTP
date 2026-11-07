@@ -1,0 +1,3 @@
+/home/claude/cp2/pkg/mla_pipeline.py:141: UserWarning: No Harmless tasks found: run-level negatives are missing. TAMAS does not ship its 100 harmless tasks; supply data/Harmless/<scenario>_harmless.json.
+  warnings.warn("No Harmless tasks found: run-level negatives are missing. TAMAS does not ship "
+No usable logs under tamas_real/logs. Expected tamas_real/logs/<attack>/<config>/<attack>_<scenario>_<i>.txt

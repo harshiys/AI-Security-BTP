@@ -1,0 +1,73 @@
+{
+  "status": "partial",
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "attack": "DPI",
+  "scenario": "education",
+  "config": "RoundRobin",
+  "runs": [
+    {
+      "index": 0,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_0.txt",
+      "returncode": 1,
+      "bytes": 13445
+    },
+    {
+      "index": 1,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_1.txt",
+      "returncode": 1,
+      "bytes": 13421
+    },
+    {
+      "index": 2,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_2.txt",
+      "returncode": 1,
+      "bytes": 13460
+    },
+    {
+      "index": 3,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_3.txt",
+      "returncode": 1,
+      "bytes": 13439
+    },
+    {
+      "index": 4,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_4.txt",
+      "returncode": 1,
+      "bytes": 13405
+    },
+    {
+      "index": 5,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_5.txt",
+      "returncode": 1,
+      "bytes": 13417
+    },
+    {
+      "index": 6,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_6.txt",
+      "returncode": 1,
+      "bytes": 13482
+    },
+    {
+      "index": 7,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_7.txt",
+      "returncode": 1,
+      "bytes": 13421
+    },
+    {
+      "index": 8,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_8.txt",
+      "returncode": 1,
+      "bytes": 10455
+    },
+    {
+      "index": 9,
+      "log": ".\\tamas_real_groq\\logs\\DPI\\RoundRobin\\DPI_education_9.txt",
+      "returncode": 1,
+      "bytes": 10452
+    }
+  ],
+  "n_ok": 0,
+  "n_total": 10,
+  "when_utc": "2026-10-27T14:06:53.285661+00:00"
+}

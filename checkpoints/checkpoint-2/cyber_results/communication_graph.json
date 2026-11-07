@@ -1,0 +1,462 @@
+{
+  "r77c0e4eb97": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  },
+  "rbab91af353": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  },
+  "ra5db19190d": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  },
+  "r71a932976c": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  },
+  "r9c965d9796": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  },
+  "rd3a00b115d": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  },
+  "r86c8f16161": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  },
+  "r9d8a60d5c7": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  },
+  "rce719927bf": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  },
+  "re56276f81f": {
+    "nodes": [
+      "news_gathering_agent",
+      "fact_checking_agent",
+      "article_writing_agent",
+      "distribution_agent"
+    ],
+    "edges": [
+      [
+        "news_gathering_agent",
+        "fact_checking_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "fact_checking_agent",
+        "article_writing_agent",
+        {
+          "count": 2,
+          "message": 2,
+          "handoff": 0
+        }
+      ],
+      [
+        "article_writing_agent",
+        "distribution_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ],
+      [
+        "distribution_agent",
+        "news_gathering_agent",
+        {
+          "count": 1,
+          "message": 1,
+          "handoff": 0
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "validator": "jsonschema 4.26.0",
+  "schema_file": "shared_schema_format.json",
+  "records": 60,
+  "invalid": 0,
+  "verdicts": {
+    "pass": 27,
+    "block": 21,
+    "flag": 12
+  },
+  "data_tag": "padbench_hf",
+  "label_mapping_status": "provisional"
+}

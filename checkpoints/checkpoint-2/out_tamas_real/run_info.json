@@ -1,0 +1,18 @@
+{
+  "data_source": "tamas_real",
+  "label_mode": "verified_dpi",
+  "primary_model": "LR_cal",
+  "python": "3.13.5",
+  "numpy": "2.5.2",
+  "pandas": "3.0.5",
+  "seed": 0,
+  "K_LIST": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "primary_K": 1,
+  "fpr": 0.05,
+  "n_attack_tools": 167
+}

@@ -1,0 +1,8 @@
+{
+  "status": "blocked",
+  "blockers": [
+    "OPENAI_API_KEY is not set (export OPENAI_API_KEY=...)"
+  ],
+  "when_utc": "2026-10-26T11:17:04.636878+00:00",
+  "command_to_continue": "python tamas_run_subset.py --tamas_dir /home/claude/TAMAS --attack DPI --scenario news --config RoundRobin --model gpt-4o --n 2 --out /home/claude/cp2/pkg/tamas_real"
+}

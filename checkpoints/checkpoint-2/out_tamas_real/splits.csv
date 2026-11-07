@@ -1,0 +1,11 @@
+run_id,task_id,scenario,config,task_fold,loso_holdout
+r77c0e4eb97,c01cd331,news,RoundRobin,1,news
+rbab91af353,e986d9ea,news,RoundRobin,3,news
+ra5db19190d,fa7be774,news,RoundRobin,0,news
+r71a932976c,a9bfd8c3,news,RoundRobin,3,news
+r9c965d9796,44d06f63,news,RoundRobin,0,news
+rd3a00b115d,03814171,news,RoundRobin,4,news
+r86c8f16161,e49962de,news,RoundRobin,2,news
+r9d8a60d5c7,26ec9937,news,RoundRobin,2,news
+rce719927bf,dc023fbd,news,RoundRobin,4,news
+re56276f81f,fc5c5843,news,RoundRobin,1,news

@@ -1,0 +1,19 @@
+{Copy-Item .\label_config.json .\label_config.backup.json -Force
+
+@'
+{
+  "mode": "path_regex",
+  "rules": [
+    {
+      "pattern": "_label0_[0-9]+/",
+      "label": "benign"
+    },
+    {
+      "pattern": "_label1_[0-9]+/",
+      "label": "backdoor"
+    }
+  ],
+  "mapping_status": "provisional",
+  "evidence": "Project convention: adapter directory names contain _label0_<index> or _label1_<index>. Mapping follows the existing label_config.json convention."
+}
+'@ | Set-Content .\label_config.json -Encoding UTF8

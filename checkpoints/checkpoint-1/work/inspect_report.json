@@ -1,0 +1,31 @@
+{
+  "revision": null,
+  "root_prefix": "",
+  "folders": {
+    "llama2_7b_toxic_backdoors_hard_rank64_qv": {
+      "sampled": 3,
+      "capped": false,
+      "weight_files": 0,
+      "children": [
+        "llama2_7b_toxic_backdoors_hard_rank64_qv/llama2_7b_toxic_backdoors_hard_rank64_qv_label0_0"
+      ],
+      "extensions": {
+        ".csv": 1,
+        ".json": 2
+      },
+      "weight_files_per_label_dir": {},
+      "dir_names_by_depth": {
+        "0": {
+          "llama2_7b_toxic_backdoors_hard_rank64_qv_label0_0": 2
+        }
+      },
+      "first_paths": [
+        "rank64_lora_hard_average_toxic_probabilities_no_grad.csv",
+        "llama2_7b_toxic_backdoors_hard_rank64_qv_label0_0/adapter_config.json",
+        "llama2_7b_toxic_backdoors_hard_rank64_qv_label0_0/special_tokens_map.json"
+      ]
+    }
+  },
+  "weight_file_names": {},
+  "label_like_dirs": {}
+}

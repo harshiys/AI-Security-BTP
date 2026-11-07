@@ -1,0 +1,17 @@
+config,K,features,model,n,n_pos,accuracy,precision,recall,f1,roc_auc,pr_auc,fpr_at_val_thr
+RoundRobin,1,tab,LR_cal,40,3,0.625,0.0,0.0,0.0,0.3018,0.0655,0.3243
+RoundRobin,1,tab,RF_cal,40,3,0.925,0.0,0.0,0.0,0.1937,0.0639,0.0
+RoundRobin,1,tab+graph,LR_cal,40,3,0.825,0.0,0.0,0.0,0.8468,0.25,0.1081
+RoundRobin,1,tab+graph,RF_cal,40,3,0.9,0.0,0.0,0.0,0.8108,0.2177,0.027
+RoundRobin,2,tab,LR_cal,38,1,0.8947,0.0,0.0,0.0,0.2027,0.0263,0.0811
+RoundRobin,2,tab,RF_cal,38,1,0.9474,0.0,0.0,0.0,0.2027,0.0263,0.027
+RoundRobin,2,tab+graph,LR_cal,38,1,0.8947,0.0,0.0,0.0,0.2027,0.0263,0.0811
+RoundRobin,2,tab+graph,RF_cal,38,1,0.9474,0.0,0.0,0.0,0.2027,0.0263,0.027
+RoundRobin,4,tab,LR_cal,38,1,0.9474,0.0,0.0,0.0,0.2027,0.0263,0.027
+RoundRobin,4,tab,RF_cal,38,1,0.9474,0.0,0.0,0.0,0.2027,0.0263,0.027
+RoundRobin,4,tab+graph,LR_cal,38,1,0.9474,0.0,0.0,0.0,0.2027,0.0263,0.027
+RoundRobin,4,tab+graph,RF_cal,38,1,0.9474,0.0,0.0,0.0,0.2027,0.0263,0.027
+RoundRobin,8,tab,LR_cal,37,0,1.0,,,,,,0.0
+RoundRobin,8,tab,RF_cal,37,0,1.0,,,,,,0.0
+RoundRobin,8,tab+graph,LR_cal,37,0,1.0,,,,,,0.0
+RoundRobin,8,tab+graph,RF_cal,37,0,1.0,,,,,,0.0
